@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object literal</h1>
+    <script>
+      var rect1={
+        width:5,
+        height:5,
+        getarea:function(){
+            return this.width*this.height
+        },
+        getperimeter:function(){
+            return this.width*2+this.height*2
+        }
+      };
+      document.write("width is= ",rect1.height,"<br/>");
+      document.write("height is= ",rect1.width,"<br/>");
+      document.write("area is= ",rect1.getarea(),"<br/>");
+      document.write("perimeter is= ",rect1.getperimeter(),"<br/>");
+
+    
+    </script>
+    <hr>
+    <script>
+        var tarun={
+            height:"5.6feat",
+            weight:"73kg",
+            color:"fair",
+            education:"b-tech",
+            cgpa:"6.9cgpa",
+        }
+        document.write("TARUN height=",tarun.height,"<br/>");
+        document.write("TARUN weight=",tarun.weight,"<br/>");
+        document.write("TARUN color=",tarun.color,"<br/>");
+        document.write("TARUN qualification=",tarun.education,"<br/>");
+        document.write("TARUN cgpa=",tarun.cgpa,"<br/>");
+    </script>
+    
+</body>
+</html>

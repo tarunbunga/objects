@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ret1= new Object();
+        ret1.width=5;
+        ret1.height=10;
+
+        ret1.getarea=function()
+        {
+            return this.width*this.height;
+        };
+        ret1.getperimeter=function()
+        {
+            return 2*this.width+2*this.height;
+        };
+        document.write(ret1.width,"<br/>");
+        document.write(ret1.height,"<br/>");
+        document.write(ret1.getperimeter(),"<br/>");
+        document.write(ret1.getarea(),"<br/>");
+        ret1.width=20; 
+        ret1.height=25;
+        document.write(ret1.getperimeter(),"<br/>");
+        document.write(ret1.getarea(),"<br/>");
+       
+    </script>
+</body>
+</html>

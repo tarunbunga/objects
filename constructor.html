@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script text="html/javascript">
+        function rectangle(width,height){
+            this.width=width;
+            this.height=height;
+            this.getarea=function(){
+                return this.width+this.height;
+            }
+        }
+        var rect1=new rectangle(5,5);
+        document.write("width = ",rect1.width);
+        document.write("<br/>");
+        document.write("height = ",rect1.height);
+        document.write("<br/>");
+        document.write("area = ",rect1.getarea());
+    </script>
+    
+</body>
+</html>
